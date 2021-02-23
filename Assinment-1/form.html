@@ -12,15 +12,17 @@
 <form>
     <fieldset>
         <legend>Personal Information</legend>
-        <p>
+        <div>
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="first_name" placeholder="First Name">
+            <input type="text" id="firstName" name="first_name" placeholder="First Name" required>
 
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="last_name" placeholder="Last Name">
+            <input type="text" id="lastName" name="last_name" placeholder="Last Name" required>
+        </div>
+
+        <p>
+            Gender:
         </p>
-
-
         <p>
             <label for="male">Male</label>
             <input type="radio" id="male" name="gender">
@@ -30,20 +32,20 @@
             <input type="radio" name="gender" id="others">
         </p>
         <p>
-            <label for="date">Date</label>
-            <input type="date" id="date" name="date">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
         </p>
         <p>
             <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" placeholder="Enter Your Email">
+            <input type="email" id="mail" name="user_email" placeholder="Enter Your Email" required>
         </p>
         <p>
             <label for="phoneNumber">Phone:</label>
-            <input type="tel" id="phoneNumber" placeholder="+91" name="phone_number">
+            <input type="tel" id="phoneNumber" placeholder="+91" name="phone_number" minlength="10" maxlength="13" required>
         </p>
         <p>
             <label for="height">Height:</label>
-            <input type="number" id="height" placeholder="Height in feet" name="height">
+            <input type="number" id="height" placeholder="Height in feet" name="height" required>
         </p>
 
     </fieldset>
@@ -51,16 +53,16 @@
         <legend>Education</legend>
         <p>
             <label for="schoolName">School Name:</label>
-            <input type="text" id="schoolName" placeholder="School Name" name="school_name">
+            <input type="text" id="schoolName" placeholder="School Name" name="school_name" required>
         </p>
         <p>
             <label for="class">Class:</label>
-            <input type="number" id="class" placeholder="Enter Class" name="class">
+            <input type="number" id="class" placeholder="Enter Class" name="class" required>
         </p>
         <p>
             <label for="stream">Stream</label>
-            <select name="stream" id="stream">
-                <option>Stream</option>
+            <select name="stream" id="stream" required>
+                <option></option>
                 <option>Computer Science</option>
                 <option>Information Technology</option>
                 <option>Mechanical Engineering</option>
@@ -70,7 +72,7 @@
         </p>
         <p>
             <label for="markSheet">Marksheet:</label>
-            <input type="file" id="markSheet" name="marksheet">
+            <input type="file" id="markSheet" name="marksheet" required accept=".jpeg,.png,.jpg,.pdf,.doc">
         </p>
     </fieldset>
     <button type="submit">Submit</button>
