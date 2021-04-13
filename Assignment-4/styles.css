@@ -1,0 +1,14 @@
+body {
+    margin: 5em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    grid-auto-columns: minmax(250px, auto);
+    gap:0.5em;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
