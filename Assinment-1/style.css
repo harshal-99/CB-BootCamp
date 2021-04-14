@@ -1,0 +1,7 @@
+iframe {
+    height: 100vh;
+    width: 50vw;
+}
+body{
+    display: inline-block;
+}
